@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>しが古町さんぽ</title>
+        <meta name="description" content="しが古町さんぽのウェブサイトです。このサイトでは滋賀県の情緒あふれる古い町並みをご案内いたします。">
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
+        
+        <!-- favicon -->
+        <link rel="icon" href="./images/favicon/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/favicon_sp.png">
+        
+        <!-- ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+        
+    </head>
+    
+    <body>
+        <!-- ヘッダー -->
+        <header class="header header_contact">
+            <!-- ロゴ -->
+            <a href="index.html">
+                <picture>
+                    <source srcset="./images/logo/logo.png" media="(min-width: 769px)"/>
+                    <img class="logo" src="./images/logo/logo_sp.png" alt="しが古町さんぽ">
+                </picture>
+            </a>
+            <!--ハンバーガーボタン-->
+            <div class="hamburger hamburger_contact">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <!--SPメニュー-->
+            <nav class="globalMenuSp">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="area.html">エリアで探す</a></li>
+                    <li><a href="picture.html">写真で探す</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <!--PCメニュー -->
+            <nav class="globalMenuPc">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="area.html">エリアで探す</a></li>
+                    <li><a href="picture.html">写真で探す</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- メイン -->
+        <main class="contact_main">
+            <div class="contact_title">
+                <p>お問い合わせ</p>
+            </div>
+            <div class="Form">
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+                    <input type="text" class="Form-Item-Input">
+                    <p class="example">例）滋賀　太郎</p>
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+                    <input type="text" class="Form-Item-Input">
+                    <p class="example">例）000-0000-0000</p>
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                    <input type="email" class="Form-Item-Input">
+                    <p class="example">例）xxxx@gmail.com</p>
+                </div>
+                <div class="Form-Item">
+                    <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                    <textarea class="Form-Item-Textarea"></textarea>
+                </div>
+                <input type="submit" class="Form-Btn" value="送信">
+            </div>
+        </main>
+        
+        
+        <!-- フッター -->
+        <footer class="footer">
+            <div class="sns">
+                <ul class="sns-list">
+                    <li><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
+                    <li><a href="https://about.instagram.com/ja-jp" target="_blank"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <a href="contact.html" class="contact-btn">お問い合わせ</a>
+            </div>
+            <div class="copyright">
+                <small>© Shiga furumachi sanpo.</small>
+            </div>
+        </footer>
+        
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/carousel.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/scrol.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <script src="./js/swiper.js"></script>
+        
+    </body>
+ 
+</html>

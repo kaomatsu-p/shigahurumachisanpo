@@ -1,0 +1,92 @@
+//
+// カバーのスタイル
+//
+
+// トップページカバー
+.cover {
+    position: relative;
+    color: $white;
+    .carousel {
+        picture {
+            .main_img {
+            }
+        }
+    }
+    .cover-title {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        height: 8rem;
+        padding: 1.5rem 0 0 1rem;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+        text-align: center;
+        span {
+            font-size: 3rem;
+            @media (min-width: ($pc)) {
+                font-size: 10rem;
+            }
+            @media (min-width: 520px) and (max-width: 768px) {
+                font-size: 4rem;
+            }
+        }
+        @media (min-width: ($pc)) {
+            height: 20rem;
+            width: 80%;
+            font-size: 6rem;
+            white-space: nowrap;
+        }
+        @media screen and (min-width: 769px) and (max-width: 960px) {
+            font-size: 4rem;
+        }
+        @media screen and (min-width: 520px) and (max-width: 769px) {
+            font-size: 3rem;
+        }
+        @media screen and (max-width: 357px) {
+            font-size: 1.5rem;
+        }
+    }
+    .drop {
+        display: block;
+        position: absolute;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 10px;
+        background: rgba(255,255,255,0.1);
+    }
+    .drop2 {
+        width: 3.5rem;
+        height: 3.5rem;
+        top: -28%;
+        left: 8%;
+        @media (min-width: ($pc)) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+    .drop3 {
+        width: 4rem;
+        height: 4rem;
+        top: 80%;
+        right: 10%;
+        z-index: 0;
+        @media (min-width: ($pc)) {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    .drop4 {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        top: -50%;
+        right: 5%;
+        background: rgba(255,255,255,0.2);
+        @media (min-width: ($pc)) {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+}

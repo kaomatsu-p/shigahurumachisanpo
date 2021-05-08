@@ -1,0 +1,78 @@
+//
+// ベースのスタイル
+//
+
+
+// 変数
+
+// カラー
+$white: #fcfaf2;
+$black: #333;
+$orange: #e48b63;
+$light-blue: #81c7d4;
+
+//ブレイクポイント
+$pc: 769px;
+
+
+// ベーススタイル
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: 'Kiwi Maru', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 1.75;
+    @media (min-width: ($pc)) {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+// 見出しのスタイル
+.main_title {
+    padding-left: 3rem;
+    @media (min-width: ($pc)) {
+        text-align: center;
+    }
+    h2 {
+        padding: 0.25em 0.5em;
+        border-left: solid 5px $orange;
+        background: transparent;
+        color: $orange;
+        font-size: 2.2rem;
+        font-weight: 100;
+        @media (min-width: ($pc)) {
+            display: inline-block;
+            position: relative;
+            padding: 1.5rem;
+            border-left: none;
+            font-size: 4rem;
+            text-align: center;
+            &::before {
+                position: absolute;
+                bottom: -1rem;
+                left: calc(50% - 3rem);
+                width: 8rem;
+                height: 0.4rem;
+                content: '';
+                border-radius: 3px;
+                background: $orange;
+            }
+        }
+    }
+}

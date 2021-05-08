@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>しが古町さんぽ</title>
+        <meta name="description" content="しが古町さんぽのウェブサイトです。このサイトでは滋賀県の情緒あふれる古い町並みをご案内いたします。">
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
+        
+        <!-- favicon -->
+        <link rel="icon" href="./images/favicon/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/favicon_sp.png">
+        
+        <!-- ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
+    </head>
+
+    <body>
+        <div id="top_container" class="top_container">
+            <!-- ヘッダー -->
+            <header class="header">
+                <!-- ロゴ -->
+                <a href="index.html">
+                    <picture>
+                        <source srcset="./images/logo/logo.png" media="(min-width: 769px)"/>
+                        <img class="logo" src="./images/logo/logo_sp.png" alt="しが古町さんぽ">
+                    </picture>
+                </a>
+                <!--ハンバーガーボタン-->
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <!--SPメニュー-->
+                <nav class="globalMenuSp">
+                    <ul>
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="#concept">コンセプト</a></li>
+                        <li><a href="area.html">エリアで探す</a></li>
+                        <li><a href="picture.html">写真で探す</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <!--PCメニュー -->
+                <nav class="globalMenuPc">
+                    <ul>
+                        <li><a href="index.html">トップ</a></li>
+                        <li><a href="#concept">コンセプト</a></li>
+                        <li><a href="area.html">エリアで探す</a></li>
+                        <li><a href="picture.html">写真で探す</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <!--カバー-->
+            <section class="cover">
+                 <!--カルーセル -->
+                <div class="carousel">
+                    <picture>
+                        <source srcset="./images/carousel/pc_slide_1.jpg" media="(min-width: 769px)"/>
+                        <img class="main_img" src="./images/carousel/sp_slide_1.jpg" alt="古い町並みの画像1">
+                    </picture>
+                    <picture>
+                        <source srcset="./images/carousel/pc_slide_2.jpg" media="(min-width: 769px)"/>
+                        <img class="main_img" src="./images/carousel/sp_slide_2.jpg" alt="古い町並みの画像2">
+                    </picture>
+                    <picture>
+                        <source srcset="./images/carousel/pc_slide_3.jpg" media="(min-width: 769px)"/>
+                        <img class="main_img" src="./images/carousel/sp_slide_3.jpg" alt="古い町並みの画像3">
+                    </picture>
+                </div>
+                <div class=" drop cover-title">
+                    <span>
+                        時
+                    </span>
+                    を忘れてみませんか？
+                    <div class="drop drop2"></div>
+                    <div class="drop drop3"></div>
+                    <div class="drop drop4"></div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="main_container">
+            <section id="concept" class="concept">
+                <div class="main_title">
+                    <h2>しが古町さんぽとは</h2>
+                </div>
+                <div class="concept_text">
+                    <p>
+                        「関西で古い町並み散策したいな」
+                        <br>
+                        「でも人混みの多い観光地は嫌だな」
+                        <br>
+                        「ゆったりした時間を過ごしたいな」
+                        <br>
+                        「フォトジェニックな場所あるかな」
+                    </p>
+                    <p>
+                        そんな要望にお応えするのが
+                        <br>
+                        " しが古町さんぽ" です。
+                    </p>
+                    <p>
+                        このサイトでは、昔にタイムスリップ
+                        <br>
+                        したかのような滋賀県の美しい町並みを
+                        <br>
+                        ご案内いたします。
+                    </p>
+                </div>
+                <div class="concept_img">
+                    <img src="./images/logo/keisen.png" alt="区切り画像">
+                </div>
+            </section>
+            
+            <section class="ranking">
+                <div class="main_title">
+                    <h2>おすすめスポットRank</h2>
+                </div>
+                <div class="slider-x">
+                    <div class="rank_box">
+                        <div class="rank_img">
+                            <img src="./images/ranking/rank_3.jpg" alt="八幡堀り">
+                            <p class="rank_title">八幡堀り</p>
+                            <p class="rank_number">01</p>
+                            <p class="rank_introduction">近江商人ゆかりの地です。和舟に乗ることができ古い町並みと石畳、そして四季折々の風景を楽しむことができます。</p>
+                        </div>
+                    </div>
+                    <div class="rank_box">
+                        <div class="rank_img rank_img_2">
+                            <img src="./images/ranking/rank_2.jpg" alt="五箇荘金堂町画像">
+                            <p class="rank_title rank_title_2">五箇荘金堂町</p>
+                            <p class="rank_number rank_number_2">02</p>
+                            <p class="rank_introduction rank_introduction_2">近江商人ゆかりの地です。近江商人屋敷の邸宅が立ち並び、室内は撮影可能でフォトジェニックな場所がたくさんあります。</p>
+                        </div>
+                    </div>
+                    <div class="rank_box">
+                        <div class="rank_img">
+                            <img src="./images/ranking/rank_1.jpg" alt="黒壁スクエア画像">
+                            <p class="rank_title">黒壁スクエア</p>
+                            <p class="rank_number">03</p>
+                            <p class="rank_introduction">長浜旧市街にある、伝統的な建造物を生かした情緒ある町並み。ガラスなどのギャラリーやカフェが集積するエリアです</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe">Swipe →</div>
+            </section>
+
+            <!-- ページトップへ戻るボタン -->
+            <p class="pagetop" style="display: block;">
+                <a href="#top_container">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </p>
+            
+        </div>
+        
+        <!-- フッター -->
+        <footer class="footer">
+            <div class="sns">
+                <ul class="sns-list">
+                    <li><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
+                    <li><a href="https://about.instagram.com/ja-jp" target="_blank"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <a href="contact.html" class="contact-btn">お問い合わせ</a>
+            </div>
+            <div class="copyright">
+                <small>© Shiga furumachi sanpo.</small>
+            </div>
+        </footer>
+        
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/carousel.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/scrol.js"></script>
+        
+    </body>
+    
+    
+</html>

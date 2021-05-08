@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>しが古町さんぽ</title>
+        <meta name="description" content="しが古町さんぽのウェブサイトです。このサイトでは滋賀県の情緒あふれる古い町並みをご案内いたします。">
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/50da9b9db7.js" crossorigin="anonymous"></script>
+        
+        <!-- favicon -->
+        <link rel="icon" href="./images/favicon/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/favicon_sp.png">
+        
+        <!-- ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+        
+    </head>
+    
+    <body>
+        <!-- ヘッダー -->
+        <header class="header">
+            <!-- ロゴ -->
+            <a href="index.html">
+                <picture>
+                    <source srcset="./images/logo/logo.png" media="(min-width: 769px)"/>
+                    <img class="logo" src="./images/logo/logo_sp.png" alt="しが古町さんぽ">
+                </picture>
+            </a>
+            <!--ハンバーガーボタン-->
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <!--SPメニュー-->
+            <nav class="globalMenuSp">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="area.html">エリアで探す</a></li>
+                    <li><a href="picture.html">写真で探す</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <!--PCメニュー -->
+            <nav class="globalMenuPc">
+                <ul>
+                    <li><a href="index.html">トップ</a></li>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="area.html">エリアで探す</a></li>
+                    <li><a href="picture.html">写真で探す</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- メイン -->
+        <main>
+            <!--カバー-->
+            <section class="cover">
+                <picture>
+                    <source srcset="./images/cover/cover_1.jpg" media="(min-width: 769px)"/>
+                    <img class="main_img" src="./images/cover/cover_1_sp.jpg" alt="古い町並みの画像1">
+                </picture>
+            </section>
+            <section class="search">
+                <!--タイトル-->
+                <div class="main_title main_title_area">
+                    <h2>エリアで探す</h2>
+                </div>
+                <div class="search_container">
+                    <!--文言-->
+                    <div class="search_text">
+                        <div class="area_box">
+                            <div class="area_text area_text_sp"><a href="#country_kohoku">湖北エリア</a></div>
+                            <div class="area_text area_text_pc"><a href="#country_kohoku_pc">湖北エリア</a></div>
+                            <div class="city">長浜市</div>
+                            <div class="city">米原市</div>
+                        </div>
+                        <div class="area_box">
+                            <div class="area_text area_text_sp"><a href="#country_kotou">湖東エリア</a></div>
+                            <div class="area_text area_text_pc"><a href="#country_kotou_pc">湖東エリア</a></div>
+                            <div class="city">東近江市</div>
+                            <div class="city">近江八幡市</div>
+                        </div>
+                        <div class="area_box">
+                            <div class="area_text area_text_sp"><a href="#country_konan">湖南エリア</a></div>
+                            <div class="area_text area_text_pc"><a href="#country_konan_pc">湖南エリア</a></div>
+                            <div class="city">大津市</div>
+                        </div>
+                        <div class="area_box">
+                            <div class="area_text area_text_sp"><a href="#country_kosei">湖西エリア</a></div>
+                            <div class="area_text area_text_pc"><a href="#country_kosei_pc">湖西エリア</a></div>
+                            <div class="city">高島市</div>
+                        </div>
+                    </div>
+                    <!--地図-->
+                    <div class="map-box_sp">
+                        <img src="./images/search/shiga_area.png" alt="滋賀県地図">
+                    </div>
+                    <div class="map-box">
+                        <div class="map_area">
+                            <script type="text/javascript">
+                                function changeMapImage(imgPath) {
+                                document.getElementById('map').src = imgPath;
+                                }
+                            </script>
+                            <div class="map">
+                                <img id="map" src="./images/search/shiga_area.png" border="0" usemap="#map" alt="滋賀県地図">
+                                <map name="map">
+                                    <area shape="poly" coords="48,236,68,237,85,243,113,236,90,259,83,300,56,361,73,395,84,359,93,334,104,318,123,315,133,307,141,321,165,338,172,370,196,369,233,367,237,348,266,349,293,370,331,380,319,414,300,443,267,456,228,455,173,443,170,446,182,457,174,468,158,489,134,499,131,480,118,471,100,463,92,447,67,447,56,438,54,407,34,365,43,275,38,252,47,235,102,211" href="#country_konan_pc"
+                                    onmouseover="changeMapImage('./images/search/shiga_area_konan.png')"
+                                    onmouseout="changeMapImage('./images/search/shiga_area.png')" alt="滋賀県地図">
+                                    <area shape="poly" coords="173,74,196,71,204,55,191,28,195,2,225,15,257,31,274,43,280,82,302,77,316,104,319,121,330,138,324,155,333,182,318,224,297,228,275,220,254,220,258,180,235,164,219,151,215,113,201,106,196,129,191,121,177,121,170,130,167,107,167,90,171,79,175,73,247,63" href="#country_kohoku_pc"
+                                    onmouseover="changeMapImage('./images/search/shiga_area_kohoku.png')"
+                                    onmouseout="changeMapImage('./images/search/shiga_area.png')" alt="滋賀県地図">
+                                    <area shape="poly" coords="168,90,169,127,148,132,140,171,154,198,116,236,89,240,64,234,50,233,44,224,35,228,3,195,7,180,34,161,61,161,83,117,83,111,114,115,131,100,165,94,165,94" href="#country_kosei_pc"
+                                    onmouseover="changeMapImage('./images/search/shiga_area_kosei.png')"
+                                    onmouseout="changeMapImage('./images/search/shiga_area.png')" alt="滋賀県地図">
+                                    <area shape="poly" coords="254,222,280,220,291,227,318,225,338,286,350,302,341,346,331,372,289,371,244,350,233,362,198,369,180,366,165,331,142,317,135,311,158,304,157,284,193,266,253,222,301,218" href="#country_kotou_pc"
+                                    onmouseover="changeMapImage('./images/search/shiga_area_kotou.png')"
+                                    onmouseout="changeMapImage('./images/search/shiga_area.png')" alt="滋賀県地図">
+                                </map>
+                            </div>
+                        </div>
+                        <!--注意書き-->
+                        <div class="note">
+                            <p>※エリアを押すとスクロールします</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--エリア別紹介(sp表示)-->
+                <div class="country-box">
+                    <div id="country_kohoku" class="country">
+                        <div class="country_title">
+                            <p>湖北エリア</p>
+                            <img src="./images/country/tori.png" alt="ロゴ画像">
+                        </div>
+                        <div class="country_img">
+                            <!-- Swiper START -->
+                            <div class="swiper-container">
+                                <!-- メイン表示部分 -->
+                                <div class="swiper-wrapper">
+                                    <!-- 各スライド -->
+                                    <div class="swiper-slide">
+                                        <a href="kohoku.html#kurokabe"><img src="./images/area_pic/kurokabe.jpg" alt="黒壁スクエア画像"></a>
+                                        <p class="title">長浜 黒壁スクエア</p>
+                                        <p>伝統的な建造物を生かした情緒ある町並み。ガラスなどのギャラリーやカフェ等が集積するエリアです。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="kohoku.html#samegai"><img src="./images/area_pic/samegai.jpg" alt="醒ヶ井宿画像"></a>
+                                        <p class="title">中山道 醒ヶ井宿</p>
+                                        <p>とても澄んだ地蔵川の流れに沿って、宿場が栄えています。今も風情ある町並みが残ってる地域です。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                </div>
+                                <!-- ページネーション -->
+                                <div class="swiper-pagination swiper-pagination-black"></div>
+                            </div>
+                            <!-- Swiper END -->
+                        </div>
+                        <div class="google_map">
+                            <a href="kohoku.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="country_kotou" class="country">
+                        <div class="country_title">
+                            <p>湖東エリア</p>
+                            <img src="./images/country/geta.png" alt="ロゴ画像">
+                        </div>
+                        <div class="country_img">
+                            <!-- Swiper START -->
+                            <div class="swiper-container">
+                                <!-- メイン表示部分 -->
+                                <div class="swiper-wrapper">
+                                    <!-- 各スライド -->
+                                    <div class="swiper-slide">
+                                        <a href="kotou.html#kondou"><img src="./images/area_pic/kondou.jpg" alt="五箇荘金堂町画像"></a>
+                                        <p class="title">五箇荘 金堂町</p>
+                                        <p>近江商人屋敷の邸宅が立ち並んでいます。邸宅内は撮影可能で フォトジェニックな場所が たくさんあります。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="kotou.html#hachiman"><img src="./images/area_pic/hachiman.jpg" alt="八幡堀画像"></a>
+                                        <p class="title">八幡堀り</p>
+                                        <p>近江商人ゆかりの地です。 和舟に乗ることができ、 古い町並みと四季折々の風景を楽しむことができます。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                </div>
+                                <!-- ページネーション -->
+                                <div class="swiper-pagination swiper-pagination-black"></div>
+                            </div>
+                            <!-- Swiper END -->
+                        </div>
+                        <div class="google_map">
+                            <a href="kotou.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    <div id="country_konan" class="country">
+                        <div class="country_title">
+                            <p>湖南エリア</p>
+                            <img src="./images/country/hana.png" alt="ロゴ画像">
+                        </div>
+                        <div class="country_img">
+                            <!-- Swiper START -->
+                            <div class="swiper-container">
+                                <!-- メイン表示部分 -->
+                                <div class="swiper-wrapper">
+                                    <!-- 各スライド -->
+                                    <div class="swiper-slide">
+                                        <a href="konan.html#sakamoto"><img src="./images/area_pic/sakamoto.jpg" alt="大津坂本画像"></a>
+                                        <p class="title">大津 坂本</p>
+                                        <p>石積が特徴の町並みは 落ち着いた雰囲気を 漂わせています。四季折々の 風景も楽しめます。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="konan.html#kusatsu"><img src="./images/area_pic/kusatsu.jpg" alt="宿場町草津画像"></a>
+                                        <p class="title">宿場町 草津</p>
+                                        <p>草津宿本陣を中心に 古い建物が多く残されています。 毎年春には草津宿場まつりが 開催されています。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                </div>
+                                <!-- ページネーション -->
+                                <div class="swiper-pagination swiper-pagination-black"></div>
+                            </div>
+                            <!-- Swiper END -->
+                        </div>
+                        <div class="google_map">
+                            <a href="konan.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="country_kosei" class="country">
+                        <div class="country_title">
+                            <p>湖西エリア</p>
+                            <img src="./images/country/momo.png" alt="ロゴ画像">
+                        </div>
+                        <div class="country_img">
+                            <!-- Swiper START -->
+                            <div class="swiper-container">
+                                <!-- メイン表示部分 -->
+                                <div class="swiper-wrapper">
+                                    <!-- 各スライド -->
+                                    <div class="swiper-slide">
+                                        <a href="kosei.html#kaizu"><img src="./images/area_pic/kaizu_2.jpg" alt="海津町並み画像"></a>
+                                        <p class="title">海津 町並み</p>
+                                        <p>湖岸に風や波から家を守るために石積みが残されています。 かなり穴場スポットなので まったり散歩ができます。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="kosei.html#kutsuki"><img src="./images/area_pic/kutsuki.jpg" alt="朽木市場画像"></a>
+                                        <p class="title">朽木市場</p>
+                                        <p>小浜と京都を結ぶ鯖街道の宿場町として有名な朽木市場の町並みがあり、平入りの町家建築や一部には茅葺の旧家も見られます。</p>
+                                        <p class="space"></p>
+                                    </div>
+                                </div>
+                                <!-- ページネーション -->
+                                <div class="swiper-pagination swiper-pagination-black"></div>
+                            </div>
+                            <!-- Swiper END -->
+                        </div>
+                        <div class="google_map">
+                            <a href="kosei.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--エリア別紹介(pc表示)-->
+            <div class="country-box-pc">
+                <div id="country_kohoku_pc" class="country">
+                    <div class="country_title">
+                        <p>湖北エリア</p>
+                        <img src="./images/country/tori.png" alt="ロゴ画像">
+                        <div class="google_map">
+                            <a href="kohoku.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="country_img">
+                        <div class="country_wrapper">
+                            <a href="kohoku.html#kurokabe"><img src="./images/area_pic/kurokabe.jpg" alt="黒壁スクエア画像"></a>
+                            <p class="title">長浜 黒壁スクエア</p>
+                            <p>伝統的な建造物を生かした情緒ある町並み。ガラスなどのギャラリーやカフェ等が集積するエリアです。</p>
+                        </div>
+                        <div class="country_wrapper">
+                            <a href="kohoku.html#samegai"><img src="./images/area_pic/samegai.jpg" alt="醒ヶ井宿画像"></a>
+                            <p class="title">中山道 醒ヶ井宿</p>
+                            <p>とても澄んだ地蔵川の流れに沿って、宿場が栄えています。今も風情ある町並みが残ってる地域です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="country-box-pc">
+                <div id="country_kotou_pc" class="country">
+                    <div class="country_title">
+                        <p>湖東エリア</p>
+                        <img src="./images/country/geta.png" alt="ロゴ画像">
+                        <div class="google_map">
+                            <a href="kotou.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="country_img">
+                        <div class="country_wrapper">
+                            <a href="kotou.html#kondou"><img src="./images/area_pic/kondou.jpg" alt="五箇荘金堂町画像"></a>
+                            <p class="title">五箇荘 金堂町</p>
+                            <p>近江商人屋敷の邸宅が立ち並んでいます。邸宅内は撮影可能で フォトジェニックな場所が たくさんあります。</p>
+                        </div>
+                        <div class="country_wrapper">
+                            <a href="kotou.html#hachiman"><img src="./images/area_pic/hachiman.jpg" alt="八幡堀画像"></a>
+                            <p class="title">八幡堀り</p>
+                            <p>近江商人ゆかりの地です。 和舟に乗ることができ、 古い町並みと四季折々の風景を楽しむことができます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="country-box-pc">
+                <div id="country_konan_pc" class="country">
+                    <div class="country_title">
+                        <p>湖南エリア</p>
+                        <img src="./images/country/hana.png" alt="ロゴ画像">
+                        <div class="google_map">
+                            <a href="konan.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="country_img">
+                        <div class="country_wrapper">
+                            <a href="konan.html#sakamoto"><img src="./images/area_pic/sakamoto.jpg" alt="大津坂本画像"></a>
+                            <p class="title">大津 坂本</p>
+                            <p>石積が特徴の町並みは 落ち着いた雰囲気を 漂わせています。四季折々の 風景も楽しめます。</p>
+                        </div>
+                        <div class="country_wrapper">
+                            <a href="konan.html#kusatsu"><img src="./images/area_pic/kusatsu.jpg" alt="宿場町草津画像"></a>
+                            <p class="title">宿場町 草津</p>
+                            <p>草津宿本陣を中心に 古い建物が多く残されています。 毎年春には草津宿場まつりが 開催されています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="country-box-pc">
+                <div id="country_kosei_pc" class="country">
+                    <div class="country_title">
+                        <p>湖西エリア</p>
+                        <img src="./images/country/momo.png" alt="ロゴ画像">
+                        <div class="google_map">
+                            <a href="kosei.html">Access<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="country_img">
+                        <div class="country_wrapper">
+                            <a href="kosei.html#kaizu"><img src="./images/area_pic/kaizu_2.jpg" alt="海津町並み画像"></a>
+                            <p class="title">海津 町並み</p>
+                            <p>湖岸に風や波から家を守るために石積みが残されています。 かなり穴場スポットなので まったり散歩ができます。</p>
+                        </div>
+                        <div class="country_wrapper">
+                            <a href="kosei.html#kutsuki"><img src="./images/area_pic/kutsuki.jpg" alt="朽木市場画像"></a>
+                            <p class="title">朽木市場</p>
+                            <p>小浜と京都を結ぶ鯖街道の宿場町として有名な朽木市場の町並みがあり、平入りの町家建築や一部には茅葺の旧家も見られます。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- ページトップへ戻るボタン -->
+        <p class="pagetop" style="display: block;">
+            <a href="#top_container">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </p>
+        
+        <!-- フッター -->
+        <footer class="footer">
+            <div class="sns">
+                <ul class="sns-list">
+                    <li><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></li>
+                    <li><a href="https://about.instagram.com/ja-jp" target="_blank"><i class="fab fa-instagram" aria-label="instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <a href="contact.html" class="contact-btn">お問い合わせ</a>
+            </div>
+            <div class="copyright">
+                <small>© Shiga furumachi sanpo.</small>
+            </div>
+        </footer>
+        
+        
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/carousel.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/scrol.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <script src="./js/swiper.js"></script>
+    </body>
+    
+    
+</html>
